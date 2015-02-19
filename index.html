@@ -4,4 +4,31 @@ layout: default
 
 <div class="container">
   <h1>Nothing to see here, yet!</h1>
+
+  <h2>Signals</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Organization</th>
+        <th>URL</th>
+        <th>Conformance</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for signal in site.data.signals.signals %}
+      <tr class="{{ signal.status-class }}">
+        <td>{{ signal.id }}</td>
+        <td>{{ signal.name }}</td>
+        <td>{{ signal.organization }}</td>
+        <td><a href="{{ signal.url }}">{{ signal.url }}</a></td>
+        <td><a href="{{ signal.url }}/metadata">Link</a></td>
+        <td>{{ signal.status }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
 </div>
