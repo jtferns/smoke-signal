@@ -1,30 +1,26 @@
 <script>
 
 function checkForSmoke( link ) {
-  url = $(link).text();
-  console.log("Pinging..." + url);
+  var url = $(link).text();
+  var id = $(link).attr('class').split(/\s+/)[1].split('-')[1];
   $.ajax({
     type: "GET",
     url: url,
     headers: {
       'Content-Type': 'charset=UTF-8',
-      'Accept': 'application/fhir+xml',
-      'Content-Type': 'application/fhir+xml;charset=UTF-8'
     },
     success: function(message,text,response){
-      // console.log(message);
-      console.log(text);
-      console.log(response);
-      // console.log(url);
+      $("tr#"+id).attr('class','success');
+      $("#"+id+" #status").text('up');
+    },
+    error: function(jqXHR, textStatus, errorThrown) {
+      $("tr#"+id).attr('class','danger');
+      $("#"+id+" #status").text('down?');
     }
   });
 }
 
 $( document ).ready(function() {
-  // $( "p" ).text(
-  //   _.map($('.link'), function(link) { return $(link).text();})
-  // );
-  // _.map($('.link'), function(link) { return $(link).text();});
   _.each($('.link'), checkForSmoke)
 });
 </script>

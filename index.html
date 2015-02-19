@@ -4,15 +4,18 @@ layout: default
 
 <div class="container">
 
-  <!-- <p>Not loaded yet.</p> -->
-
-  <h2>Signals</h2>
+  <h2>
+    <span class="fa-stack fa-lg">
+      <i class="fa fa-cloud fa-stack-2x"></i>
+      <i class="fa fa-fire fa-inverse fa-stack-1x"></i>
+    </span>
+    Signals</h2>
   <table class="table table-striped">
     <thead>
       <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Organization</th>
+        <th>Version</th>
         <th>URL</th>
         <th>Conformance</th>
         <th>Status</th>
@@ -20,13 +23,13 @@ layout: default
     </thead>
     <tbody>
       {% for signal in site.data.signals.signals %}
-      <tr class="{{ signal.status-class }}" id="{{signal.id}}">
+      <tr id="{{signal.id}}">
         <td>{{ signal.id }}</td>
         <td>{{ signal.name }}</td>
-        <td>{{ signal.organization }}</td>
+        <td>{{ signal.version }}</td>
         <td class="link link-{{signal.id}}"><a href="{{ signal.url }}">{{ signal.url }}</a></td>
         <td><a href="{{ signal.url }}/metadata">Link</a></td>
-        <td>{{ signal.status }}</td>
+        <td id="status"><i class="fa fa-spinner fa-pulse"></i></td>
       </tr>
       {% endfor %}
     </tbody>

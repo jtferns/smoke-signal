@@ -1,20 +1,95 @@
 {
-   "signals":[
-      {
-         "id":"1",
-         "name":"Grahame's Test Server",
-         "organization":"",
-         "url":"http://fhir.healthintersections.com.au/open",
-         "status-class":"warning",
-         "status":"--"
-      },
-      {
-        "id":"2",
-        "name":"Furore's Spark Test Server",
-        "organization":"",
-        "url":"http://spark.furore.com/fhir",
-        "status-class":"warning",
-        "status":"--"
-      }
-   ]
+  "signals":[
+    {
+      "id":"1",
+      "name":"Grahame's Development Server",
+      "version":"DSTU2",
+      "url":"http://fhir-dev.healthintersections.com.au/open"
+    },{
+      "id":"2",
+      "name":"HAPI / University Health Network test server",
+      "version":"DSTU2",
+      "url":"http://fhirtest.uhn.ca/baseDstu2"
+    },{
+      "id":"3",
+      "name":"Oridashi Best Practice CIS",
+      "version":"DSTU2",
+      "url":"http://bp.oridashi.com.au/"
+    },{
+      "id":"4",
+      "name":"Oridashi Medical Director CIS",
+      "version":"DSTU2",
+      "url":"http://md.oridashi.com.au/"
+    },{
+      "id":"5",
+      "name":"Oridashi Zedmed CIS",
+      "version":"DSTU2",
+      "url":"http://zm.oridashi.com.au/"
+    },{
+      "id":"6",
+      "name":"AEGIS WildFHIR",
+      "version":"DSTU2",
+      "url":"http://wildfhir.aegis.net/fhir2"
+    },{
+      "id":"7",
+      "name":"Grahame's Test Server",
+      "version":"DSTU1",
+      "url":"http://fhir.healthintersections.com.au/open"
+    },{
+      "id":"8",
+      "name":"Furore's Spark Test Server",
+      "version":"DSTU1",
+      "url":"http://spark.furore.com/fhir"
+    },{
+      "id":"9",
+      "name":"Rik Smithies/NProgram test server",
+      "version":"DSTU1?",
+      "url":"http://nprogram.azurewebsites.net/"
+    },{
+      "id":"10",
+      "name":"Oridashi Best Practice CIS",
+      "version":"DSTU1",
+      "url":"http://demo.oridashi.com.au:8190/"
+    },{
+      "id":"11",
+      "name":"Oridashi Medical Director CIS",
+      "version":"DSTU1",
+      "url":"http://demo.oridashi.com.au:8191/"
+    },{
+      "id":"12",
+      "name":"Oridashi Zedmed CIS",
+      "version":"DSTU1",
+      "url":"http://demo.oridashi.com.au:8192/"
+    },{
+      "id":"13",
+      "name":"Robert Worden / Open Mapping Software",
+      "version":"DSTU1",
+      "url":"http://worden.globalgold.co.uk:8080/FHIR_a/farm/cobalt"
+    },{
+      "id":"14",
+      "name":"Orion Health Test Server",
+      "version":"DSTU1",
+      "url":"https://fhir.orionhealth.com/blaze/fhir/"
+    },{
+      "id":"15",
+      "name":"FHIRplace",
+      "version":"DSTU1",
+      "url":"http://fhirplace.health-samurai.io/"
+    },{
+      "id":"16",
+      "name":"HAPI / University Health Network test server",
+      "version":"DSTU1",
+      "url":"http://fhirtest.uhn.ca/baseDstu1"
+    },{
+      "id":"17",
+      "name":"Open Epic",
+      "version":"DSTU1",
+      "url":"http://open.epic.com/Interface/FHIR"
+    },{
+      "id":"18",
+      "name":"AEGIS WildFHIR",
+      "version":"DSTU1",
+      "url":"http://wildfhir.aegis.net/fhir"
+    }
+  ]
 }
