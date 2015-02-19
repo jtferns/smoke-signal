@@ -1,0 +1,22 @@
+{
+  "name": "smoke-signal",
+  "version": "0.0.0",
+  "homepage": "https://jtferns.github.io/smoke-signal",
+  "authors": [
+    "Janoo Fernandes <smoothclip@gmail.com>"
+  ],
+  "description": "a simple, smoke signal!",
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "fontawesome": "~4.3.0"
+  }
+}
