@@ -1,0 +1,20 @@
+{
+   "signals":[
+      {
+         "id":"1",
+         "name":"Grahame's Test Server",
+         "organization":"",
+         "url":"http://fhir.healthintersections.com.au/open",
+         "status-class":"warning",
+         "status":"--"
+      },
+      {
+        "id":"2",
+        "name":"Furore's Spark Test Server",
+        "organization":"",
+        "url":"http://spark.furore.com/fhir",
+        "status-class":"warning",
+        "status":"--"
+      }
+   ]
+}
