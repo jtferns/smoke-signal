@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<div id="clipboard-container"><textarea id="clipboard"></textarea></div>
+
 <div class="container">
 
   <h2>
@@ -9,7 +11,7 @@ layout: default
       <i class="fa fa-cloud fa-stack-2x"></i>
       <i class="fa fa-fire fa-inverse fa-stack-1x"></i>
     </span>
-    Signals</h2>
+    Smoke Signal</h2>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -27,9 +29,9 @@ layout: default
         <td>{{ signal.id }}</td>
         <td>{{ signal.name }}</td>
         <td>{{ signal.version }}</td>
-        <td class="link link-{{signal.id}}"><a href="{{ signal.url }}">{{ signal.url }}</a></td>
-        <td><a href="{{ signal.url }}/metadata">Link</a></td>
-        <td id="status"><i class="fa fa-spinner fa-pulse"></i></td>
+        <td class="link link-{{signal.id}}"><a href="{{ signal.url }}" target="_blank">{{ signal.url }}</a></td>
+        <td><a href="{{ signal.url }}/metadata" target="_blank"><i class="fa fa-lg fa-fw fa-external-link-square"></i></a></td>
+        <td id="status"><i class="fa fa-lg fa-fw fa-spinner fa-pulse"></i></td>
       </tr>
       {% endfor %}
     </tbody>

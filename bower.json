@@ -18,6 +18,8 @@
   "dependencies": {
     "bootstrap": "~3.3.2",
     "fontawesome": "~4.3.0",
-    "underscore": "~1.7.0"
+    "underscore": "~1.7.0",
+    "remarkable-bootstrap-notify": "~3.0.2",
+    "animate.css": "~3.2.6"
   }
 }
