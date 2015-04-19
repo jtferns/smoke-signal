@@ -1,0 +1,19 @@
+{% for signal in site.data.signals.signals %}
+<div class="panel panel-info" id="{{ signal.id }}">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      <i class="fa fa-lg fa-fw fa-spinner fa-pulse panel-status-{{ signal.id }}"></i>
+      {{ signal.name }}
+      <small>
+        <a class="link link-{{ signal.id }}" href="{{ signal.url }}" target="_blank"><i class="fa fa-lg fa-fw fa-external-link"></i> {{ signal.url }}</a> |
+        <a href="{{ signal.url }}/metadata" target="_blank"><i class="fa fa-lg fa-fw fa-info"></i> Conformance</a> |
+        <i class="fa fa-lg fa-fw fa-tags"></i>
+        <span class="label label-{{ signal.version }}">{{ signal.version }}</span>
+        {% if signal.argonauts %}
+          <span class="label label-ARG">ARGONAUTS</span>
+        {% endif %}
+      </small>
+    </h3>
+  </div>
+</div>
+{% endfor %}

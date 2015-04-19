@@ -2,32 +2,37 @@
   "signals":[
     {
       "id":"1",
-      "name":"Grahame's Argonaut Server'",
+      "name":"Health Intersections",
       "version":"DSTU2",
-      "url":"http://argonaut.healthintersections.com.au/open"
+      "url":"http://argonaut.healthintersections.com.au/open",
+      "argonauts":true
     },{
       "id":"2",
-      "name":"Epic's Argonaut Server",
+      "name":"Open Epic",
       "version":"DSTU2",
-      "url":"http://open.epic.com/Clinical/FHIR"
+      "url":"http://open.epic.com/Clinical/FHIR",
+      "argonauts":true
     },{
       "id":"3",
-      "name":"AEGIS.net, Inc.'s Argonaut Server",
+      "name":"AEGIS.net, Inc.'s WildFHIR Server",
       "version":"DSTU2",
-      "url":"http://wildfhir.aegis.net/fhir2"
+      "url":"http://wildfhir.aegis.net/fhir2",
+      "argonauts":true
     },{
       "id":"4",
-      "name":"McKesson/RelayHealth's Argonaut Server",
+      "name":"McKesson/RelayHealth's Server",
       "version":"DSTU2",
-      "url":"https://api.stage.data.relayhealth.com/rhc/fhirservice"
+      "url":"https://api.stage.data.relayhealth.com/rhc/fhirservice",
+      "argonauts":true
     },{
       "id":"5",
-      "name":"Cerner's Argonaut Server",
+      "name":"Cerner's Server",
       "version":"DSTU2",
-      "url":"https://fhir.sandboxcernerpowerchart.com/fhir/open/d075cf8b-3261-481d-97e5-ba6c48d3b41f"
+      "url":"https://fhir.sandboxcernerpowerchart.com/fhir/open/d075cf8b-3261-481d-97e5-ba6c48d3b41f",
+      "argonauts":true
     },{
       "id":"6",
-      "name":"Grahame's Development Server",
+      "name":"Health Intersections Development",
       "version":"DSTU2",
       "url":"http://fhir-dev.healthintersections.com.au/open"
     },{
@@ -68,7 +73,7 @@
     },{
       "id":"14",
       "name":"Rik Smithies/NProgram test server",
-      "version":"DSTU1?",
+      "version":"DSTU1",
       "url":"http://nprogram.azurewebsites.net/"
     },{
       "id":"15",

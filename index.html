@@ -9,35 +9,13 @@ layout: default
   <h2>
     <span class="fa-stack fa-lg">
       <i class="fa fa-cloud fa-stack-2x"></i>
-      <i class="fa fa-fire fa-inverse fa-stack-1x"></i>
+      <i class="fa fa-fire fa-inverse fa-stack-1x faa-passing faa-slow animated"></i>
     </span>
     Smoke Signal</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Version</th>
-        <th>URL</th>
-        <th>Conformance</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for signal in site.data.signals.signals %}
-      <tr id="{{signal.id}}">
-        <td>{{ signal.id }}</td>
-        <td>{{ signal.name }}</td>
-        <td>{{ signal.version }}</td>
-        <td class="link link-{{signal.id}}"><a href="{{ signal.url }}" target="_blank">{{ signal.url }}</a></td>
-        <td><a href="{{ signal.url }}/metadata" target="_blank"><i class="fa fa-lg fa-fw fa-external-link-square"></i></a></td>
-        <td id="status"><i class="fa fa-lg fa-fw fa-spinner fa-pulse"></i></td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+
+  {% include signals_panels.html %}
 
   <div class="text-center">
-    Updated on Wed, 15 Apr 2015 05:36:39 +0000
+    Updated on Sun, 19 Apr 2015 06:36:22 +0000
   </div>
 </div>

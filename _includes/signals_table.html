@@ -1,0 +1,24 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Version</th>
+      <th>URL</th>
+      <th>Conformance</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for signal in site.data.signals.signals %}
+    <tr id="{{signal.id}}">
+      <td>{{ signal.id }}</td>
+      <td>{{ signal.name }}</td>
+      <td>{{ signal.version }}</td>
+      <td class="link link-{{signal.id}}"><a href="{{ signal.url }}" target="_blank">{{ signal.url }}</a></td>
+      <td><a href="{{ signal.url }}/metadata" target="_blank"><i class="fa fa-lg fa-fw fa-external-link-square"></i></a></td>
+      <td id="status"><i class="fa fa-lg fa-fw fa-spinner fa-pulse"></i></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

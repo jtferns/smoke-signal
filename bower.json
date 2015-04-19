@@ -20,6 +20,7 @@
     "fontawesome": "~4.3.0",
     "underscore": "~1.7.0",
     "remarkable-bootstrap-notify": "~3.0.2",
-    "animate.css": "~3.2.6"
+    "animate.css": "~3.2.6",
+    "font-awesome-animation": "~0.0.6"
   }
 }

@@ -3,46 +3,49 @@
 function checkForSmoke( link ) {
   var url = $(link).text();
   var id = $(link).attr('class').split(/\s+/)[1].split('-')[1];
+  $("div.panel#"+id).removeClass('panel-success panel-danger').addClass('panel-info');
+  $("i.panel-status-"+id).removeClass('fa-check-circle fa-question-circle').addClass('fa-spinner fa-pulse');
   ping(url).then(function(delta) {
-    $("tr#"+id).attr('class','success');
-    $("#"+id+" #status").html('<i class="fa fa-lg fa-fw fa-check-circle"></i>');
+    $("div.panel#"+id).removeClass('panel-info').addClass('panel-success');
+    $("i.panel-status-"+id).removeClass('fa-spinner fa-pulse').addClass('fa-check-circle');
   }).catch(function(error) {
-    $("tr#"+id).attr('class','danger');
-    $("#"+id+" #status").html('<i class="fa fa-lg fa-fw fa-question-circle"></i>');
+    $("div.panel#"+id).removeClass('panel-info').addClass('panel-danger');
+    $("i.panel-status-"+id).removeClass('fa-spinner fa-pulse').addClass('fa-question-circle');
     if (error.message === 'Timeout') {
-      $.notify({
-      	// options
-      	message: 'Server #' + id + ' timed out!'
-      },{
-      	// settings
-      	type: 'danger',
-        animate: {
-      		enter: 'animated fadeInDown',
-      		exit: 'animated fadeOutUp'
-      	}
-      });
+      simpleNotify("danger", 'Server #' + id + ' timed out!');
     }
   });
   $( link ).hover(
     function() {
-      TrelloClipboard.set(url)
-      $(link).focus()
+      TrelloClipboard.set(url);
+      $(link).focus();
     }
   );
 }
 
-$( document ).ready(function() {
+function checkSignals() {
   _.each($('.link'), checkForSmoke)
+}
+
+function simpleNotify(type, message) {
   $.notify({
   	// options
-  	message: 'Quick copy links via hover and Ctrl+C!'
+  	message: message
   },{
   	// settings
-  	type: 'info',
+  	type: type,
     animate: {
   		enter: 'animated fadeInDown',
   		exit: 'animated fadeOutUp'
   	}
   });
+}
+
+$( document ).ready(function() {
+  simpleNotify("info", "Quick copy links via hover and Ctrl+C!");
+  checkSignals()
+  setInterval(checkSignals, 30000);
+  simpleNotify("info", "The list now refreshes every 30 seconds, for your convenience!");
+  $(".link-1").focus();
 });
 </script>
