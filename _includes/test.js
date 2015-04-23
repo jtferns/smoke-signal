@@ -45,7 +45,7 @@ $( document ).ready(function() {
   simpleNotify("info", "Quick copy links via hover and Ctrl+C!");
   checkSignals()
   setInterval(checkSignals, 600000);
-  simpleNotify("info", "The list now refreshes every 30 seconds, for your convenience!");
+  simpleNotify("info", "The list now refreshes every 10 minutes, for your convenience!");
   $(".link-1").focus();
 });
 </script>
