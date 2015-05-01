@@ -44,17 +44,17 @@
       "id":"8",
       "name":"Oridashi Best Practice CIS",
       "version":"DSTU2",
-      "url":"http://bp.oridashi.com.au/"
+      "url":"http://bp.oridashi.com.au"
     },{
       "id":"9",
       "name":"Oridashi Medical Director CIS",
       "version":"DSTU2",
-      "url":"http://md.oridashi.com.au/"
+      "url":"http://md.oridashi.com.au"
     },{
       "id":"10",
       "name":"Oridashi Zedmed CIS",
       "version":"DSTU2",
-      "url":"http://zm.oridashi.com.au/"
+      "url":"http://zm.oridashi.com.au"
     },{
       "id":"11",
       "name":"AEGIS WildFHIR",
