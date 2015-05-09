@@ -28,7 +28,7 @@
       "id":"5",
       "name":"Cerner's Server",
       "version":"DSTU2",
-      "url":"https://fhir.sandboxcernerpowerchart.com/fhir/open/d075cf8b-3261-481d-97e5-ba6c48d3b41f",
+      "url":"https://fhir.sandboxcernerpowerchart.com/dstu2/open/d075cf8b-3261-481d-97e5-ba6c48d3b41f",
       "argonauts":true
     },{
       "id":"6",
